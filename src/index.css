@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  color: black;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: #0c0d13;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbarHome {
+  font-family: 'Smooch', cursive;
+  font-size: 3em;
+  color: #66fcf2;
+  position: sticky;
+}
+
+.navbarHome:active {
+  color: #66fcf2;
+}
+
+.navbarHome:hover {
+  color: #66fcf2;
+}
+
+
+.navLink {
+  display: inline;
+}
+
+.navbarLinks {
+  margin: 0;
+
+}
+
+.navbar {
+  background-color: #212833;
+}
+
+.navLink {
+  background-color: transparent;
+  list-style-type: none;
+}
+
+.navLinkButton {
+  background-color: transparent;
+  color: #66fcf2;
+  border-color: #66fcf2;
+  box-shadow: 0 1px 2px #66fcf2;
+}
+
+@keyframes inflateButton {
+  from {}
+
+  to {
+    transform: scale(1.1, 1.1);
+  }
+}
+
+.navLinkButton:hover {
+  box-shadow: 0 5px 15px #66fcf2;
+  animation-name: inflateButton;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes deflateButton {
+  from {
+    transform: scale(1.1, 1.1)
+  }
+
+  to {
+    transform: scale(1, 1);
+  }
+}
+
+.navLinkButton:hover::after {
+  animation-name: inflateButton;
+  animation-duration: 0.4s;
+}
+
+.navLinkButton:focus {
+  box-shadow: 0 5px 15px #66fcf2;
+}
+
+
+.LeetCodePage {
+  color: white;
+  z-index: 1;
+}
+
+
+
+.InfoBox {
+  background-color: transparent;
+  color: white;
+  border-style: solid !important;
+  border-width: 1px !important;
+  border-color: #66fcf2 !important;
+  max-width: 340px;
+  margin: 40px;
+}
+
+
+
+.row {
+  display: flex;
+  max-height: fit-content;
+  justify-content: center;
+}
+
+.PieGraph {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+
+.background {
+  top: 0;
+  position: fixed;
+  display: block;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
+
+.LeetCodePageTitle {
+  display: flex;
+  justify-content: center;
+}
+
+.LeetCodePageNumProblems {
+  display: flex;
+  justify-content: center;
+}
+
+.HomePage {
+  color: white;
+}
+
+.InfoBoxTechnologies {
+  bottom: 0;
+}
+
+
+
+.InfoBoxButtons {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.CenterItems {
+  display: flex;
+  justify-content: center;
+}
+
+.IntroText {
+  margin-bottom: 40px;
+}
+
+
+
+.list-group-item {
+  background-color: transparent;
+  /* border-style: solid;
+  border-width: 1px;
+  border-color: #509894; */
+}
+
+.card-header {
+  background-color: transparent;
+  border-bottom: solid #509894 3px;
+}
+
+.AreasOfInterest,
+.RelevantCourses {
+  color: white !important;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #509894;
+  margin: 20px !important;
+}
+
+h1 {
+  color: #66fcf2 !important;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.infoCollection {
+  margin: 0;
+  padding: 0;
+}
+
+.LeetCodePage {
+  margin-bottom: 20px;
+}
+
+.NavBarExternalLinks {
+  margin-left: auto;
+}
+
+.NavBarExternalLink {
+  width: 40px;
+  height: 40px;
+  border: solid white 2px;
+  margin: 0 10px;
+}
+
+.youtubeChannelPage h2 {
+  margin: 40px;
+  color: #66fcf2;
+  display: flex;
+  justify-content: center;
+}
+
+.VideoPlayer {
+  display: flex;
+  justify-content: center;
+}
