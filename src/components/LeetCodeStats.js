@@ -17,7 +17,7 @@ const LeetCodeStats = ({ analytics }) => {
 
     return (
         <div className="PieGraph">
-            <svg viewBox="-320 -320 640 640" style={{ maxWidth: "640px" }} textAnchor="middle" fontFamily="sans-serif">
+            <svg width={640} height={640} viewBox="-320 -320 640 640" style={{ maxWidth: "640px" }} textAnchor="middle" fontFamily="sans-serif">
                 {pieArcData.map(d =>
                     <>
                         <path className="PieSlice" d={`${arcPie(d)}`} fill={d.data.color} key={d.data.color}></path>
