@@ -27,17 +27,37 @@ const navIcons = [{
 const projectData = [
     {
         "title": "Covid-19 Crime Rate Relation Visualization",
+        "identifier": "CrimeRate",
         "content": [],
         "technologies": "Python",
         "img": "Covid_Project_Img.png",
-        "github": "https://github.com/DanielDervishi/CSC110-Final-Project"
+        "external": {
+            "link": "https://github.com/DanielDervishi/CSC110-Final-Project",
+            "name": "Github"
+        }
     },
     {
         "title": "Chrome Web Extension - Reminder Application",
+        "identifier": "Reminder",
         "content": [],
         "technologies": "HTML, CSS and JavaScript",
-        "img": "OnTime_Project_Img.png"
+        "img": "OnTime_Project_Img.png",
+        "external": {
+            "link": "https://chrome.google.com/webstore/detail/on-time-ba/ncbhngpkilpfenmofalllgccllibjpbp",
+            "name": "Chrome Web Store"
+        }
     }
 ]
+const popoutInfo = {
+    'CrimeRate': {
+        'Title': 'Covid-19 Crime Rate Relation Visualization',
+        'Points': []
+    },
+    'Reminder': {
+        'Title': 'Chrome Web Extension - Reminder Application',
+        'Points': []
+    }
+}
 
-export { navIcons, projectData }
+
+export { navIcons, projectData, popoutInfo }

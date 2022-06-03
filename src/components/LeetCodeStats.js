@@ -22,7 +22,7 @@ const LeetCodeStats = ({ analytics }) => {
                     <>
                         <path className="PieSlice" d={`${arcPie(d)}`} fill={d.data.color} key={d.data.color}></path>
                         <text transform={`translate(${arcPie.centroid(d).join(",")})`} fill="white" key={d.data.name}>
-                            <tspan x="0" fontSize="24" key={1}>{d.data.name}</tspan>
+                            {d.data.name === "Hard" ? <tspan x="0" fontSize="16" key={1}>{d.data.name}</tspan> : <tspan x="0" fontSize="24" key={1}>{d.data.name}</tspan>}
                             <tspan x="0" fontSize="12" dy="1.3em" key={2}>{d.value.toLocaleString("en")}</tspan>
                         </text>
                     </>)

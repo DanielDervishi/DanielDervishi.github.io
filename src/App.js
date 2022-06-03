@@ -7,6 +7,7 @@ import ProjectsPage from './components/ProjectsPage';
 import YoutubeChannelPage from './components/YoutubeChannelPage';
 import axios from 'axios'
 import LeetCodePage from './components/LeetCodePage';
+import Popout from './components/Popout';
 import { projectData, navIcons } from './components/Data-Pre-Server'
 import { Routes, Route, useNavigate } from "react-router-dom";
 
@@ -15,6 +16,7 @@ function App() {
   const [analytics, setAnalytics] = useState({})
   const [videoLink, setVideoLink] = useState('')
   const [URL, setURL] = useState('/')
+  const [activePopup, setActivePopup] = useState('');
   const navigate = useNavigate();
   const getAnalytics = () => {
     axios.get('https://leetcode-stats-api.herokuapp.com/Derv-codes').then((promise) => {
@@ -27,7 +29,7 @@ function App() {
     }
     )
   }
-
+  console.log('Active Popout: ', activePopup)
   useEffect(() => {
     getAnalytics()
     getLastVideoFromYoutubeAPI()
@@ -38,10 +40,11 @@ function App() {
     <NavBar navIcons={navIcons} setURL={setURL} navigate={navigate} />
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/projects" element={<ProjectsPage projectData={projectData} />} />
+      <Route path="/projects" element={<ProjectsPage projectData={projectData} setActivePopup={setActivePopup} />} />
       <Route path="/youtube-channel" element={<YoutubeChannelPage videoLink={videoLink} />} />
       <Route path="/leetcode" element={<LeetCodePage analytics={analytics} />} />
     </Routes>
+    {activePopup ? <Popout type={activePopup} setActivePopup={setActivePopup} /> : <></>}
   </>
   )
 }

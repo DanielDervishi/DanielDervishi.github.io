@@ -8,6 +8,9 @@ const HomePage = () => {
             <h1 className='IntroTitle CenterItems font-weight-bold'>
                 Hi!
             </h1>
+            <div className='MyImageContainer'>
+                <img className="MyImage img-fluid" src={process.env.PUBLIC_URL + "Images/MyImage.gif"} />
+            </div>
             <div className='IntroText CenterItems font-weight-bold'>
                 My name is Daniel Dervishi and I'm a second year computer science major at the University of Toronto.
             </div>
@@ -15,7 +18,7 @@ const HomePage = () => {
                 <div className="card-deck">
                     <div className='card AreasOfInterest' style={{ "width": "18rem" }}>
                         <h4 className='card-header'>
-                            Areas of interest related to or in Computer Science:
+                            Areas of Interest Related to or in Computer Science:
                         </h4>
                         <ul className='list-group list-group-flush'>
                             <li className='list-group-item'>
@@ -30,7 +33,7 @@ const HomePage = () => {
                 </div>
                 <div className='card RelevantCourses' style={{ "width": "18rem" }}>
                     <h4 className='card-header'>
-                        Relevant Courses:
+                        Interseting Courses I'm Taking or Have Taken:
                     </h4>
                     <ul className='list-group list-group-flush'>
                         <li className='list-group-item'>
@@ -46,7 +49,7 @@ const HomePage = () => {
                             Software Design Principles
                         </li>
                         <li className='list-group-item'>
-                            Calculus with proofs
+                            Calculus with Proofs
                         </li>
                     </ul>
                 </div>

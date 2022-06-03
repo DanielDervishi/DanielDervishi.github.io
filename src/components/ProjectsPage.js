@@ -1,7 +1,7 @@
 import React from 'react'
 import InfoCollection from './InfoCollection';
 
-const ProjectsPage = ({ projectData }) => {
+const ProjectsPage = ({ projectData, setActivePopup }) => {
 
     return (
         <>
@@ -9,7 +9,7 @@ const ProjectsPage = ({ projectData }) => {
                 Projects
             </h1>
             <div className="row">
-                <InfoCollection data={projectData} />
+                <InfoCollection data={projectData} setActivePopup={setActivePopup} />
             </div>
         </>
     )

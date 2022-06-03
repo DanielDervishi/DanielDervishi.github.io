@@ -2,8 +2,8 @@ import React from 'react'
 import Content from './Content';
 
 
-const InfoBox = ({ title, content,
-    technologies, img, github }) => {
+const InfoBox = ({ title, content, technologies, img, external, setActivePopup, identifier }) => {
+    console.log('quick check')
     return (<li className='InfoBox card'>
         <img className="card-img-top" src={process.env.PUBLIC_URL + "Images/" + img} alt="Card image cap"></img>
         <div className='card-body'>
@@ -18,10 +18,15 @@ const InfoBox = ({ title, content,
             </div>
         </div>
         <div className="InfoBoxButtons card-footer">
-            <button className='projectButtonMore btn btn-primary '>Link1</button>
-            <a href={github}>
-                <button className='projectButtonGithub btn btn-primary'>Github</button>
-            </a>
+            <button className='projectButton btn btn-outline-primary' onClick={() => {
+                setActivePopup(identifier)
+                console.log(identifier)
+            }}>More Info</button>
+            {external != undefined ?
+                <a href={external.link}>
+                    <button className='projectButton btn btn-outline-primary' >{external.name}</button>
+                </a> : <></>}
+
         </div>
     </li>)
 }
