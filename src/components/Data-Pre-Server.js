@@ -46,7 +46,55 @@ const projectData = [
             "link": "https://chrome.google.com/webstore/detail/on-time-ba/ncbhngpkilpfenmofalllgccllibjpbp",
             "name": "Chrome Web Store"
         }
-    }
+    },
+    {
+        "title": "Students Developing Software",
+        "identifier": "SDS",
+        "content": [],
+        "technologies": "Ruby, Ruby on Rails, Action Policy, Rspec",
+        "img": "SDS.png",
+        "external": {
+            "link": "https://github.com/MarkUsProject/Markus",
+            "name": "Main Github Page"
+        }
+    },
+    {
+        "title": "Personal Website",
+        "identifier": "personalWebsite",
+        "content": [],
+        "technologies": "React, JavaScript, HTML, CSS, Bootstrap",
+        "img": "personalWebsite.png",
+        "external": {
+            "link": "https://github.com/DanielDervishi/DanielDervishi.github.io",
+            "name": "Github"
+        }
+    },
+    {
+        "title": "Clinic Management System",
+        "identifier": "clinicManager",
+        "content": [],
+        "technologies": "Java, JUnit",
+        "img": "clinicManager.png",
+        "external": {
+            "link": "https://github.com/The-CSC207-Group/Project207",
+            "name": "Github"
+        }
+    },
+    {
+        "title": "Hangman",
+        "identifier": "hangman",
+        "content": [],
+        "technologies": "Swift",
+        "img": "Hangman.png",
+    },
+    {
+        "title": "Matching",
+        "identifier": "matching",
+        "content": [],
+        "technologies": "Swift",
+        "img": "Matching.png"
+    },
+
 ]
 const popoutInfo = {
     'CrimeRate': {
@@ -55,6 +103,26 @@ const popoutInfo = {
     },
     'Reminder': {
         'Title': 'Chrome Web Extension - Reminder Application',
+        'Points': []
+    },
+    'SDS': {
+        'Title': 'Students Developing Software',
+        'Points': []
+    },
+    'personalWebsite': {
+        'Title': 'Personal Website',
+        'Points': []
+    },
+    'clinicManager': {
+        'Title': 'Clinic Management System',
+        'Points': []
+    },
+    'hangman': {
+        'Title': 'Hangman',
+        'Points': []
+    },
+    'matching': {
+        'Title': 'Matching Card Game',
         'Points': []
     }
 }

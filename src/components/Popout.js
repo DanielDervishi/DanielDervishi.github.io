@@ -1,6 +1,11 @@
 import React from 'react'
 import CrimeRatePopout from './CrimeRatePopout'
 import ReminderPopout from './ReminderPopout'
+import SDSPopout from './SDSPopout'
+import PersonalWebsitePopout from './PersonalWebsitePopout'
+import ClinicManagerPopout from './ClinicManagerPopout'
+import HangmanPopout from './HangmanPopout'
+import MatchingPopout from './MatchingPopout'
 import { popoutInfo } from './Data-Pre-Server'
 import { Modal, ModalHeader, ModalTitle, ModalBody, ModalFooter } from 'react-bootstrap'
 
@@ -8,7 +13,17 @@ const typeToComponent = {
     'CrimeRate': () => {
         return (< CrimeRatePopout popoutData={popoutInfo['CrimeRate']} />)
     },
-    'Reminder': () => { return (<ReminderPopout popoutData={popoutInfo['Reminder']} />) }
+    'Reminder': () => { return (<ReminderPopout popoutData={popoutInfo['Reminder']} />) },
+
+    'SDS': () => { return (<SDSPopout popoutData={popoutInfo['SDS']} />) }
+    ,
+    'personalWebsite': () => { return (<PersonalWebsitePopout popoutData={popoutInfo['personalWebsite']} />) }
+    ,
+    'clinicManager': () => { return (<ClinicManagerPopout popoutData={popoutInfo['clinicManager']} />) }
+    ,
+    'hangman': () => { return (<HangmanPopout popoutData={popoutInfo['hangman']} />) }
+    ,
+    'matching': () => { return (<MatchingPopout popoutData={popoutInfo['matching']} />) }
 }
 const Popout = ({ type, setActivePopup }) => {
     console.log('Made it to popout with type: ', type)

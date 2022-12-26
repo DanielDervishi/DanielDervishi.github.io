@@ -8,7 +8,7 @@ const InfoCollection = ({ data, setActivePopup }) => {
         )
     }
     return (
-        <ul className='infoCollection d-flex justify-content-start flex-wrap card-deck'>
+        <ul className='infoCollection d-flex justify-content-center flex-wrap card-deck'>
             {ulContent()}
         </ul>
     )

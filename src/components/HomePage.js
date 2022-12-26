@@ -22,12 +22,14 @@ const HomePage = () => {
                         </h4>
                         <ul className='list-group list-group-flush'>
                             <li className='list-group-item'>
-                                Software Engineering
+                                Software Engineering (backend mainly)
+                            </li>
+                            <li className='list-group-item'>
+                                Computer Systems
                             </li>
                             <li className='list-group-item'>
                                 Theoretical Computer Science
                             </li>
-
                         </ul>
                     </div>
                 </div>
@@ -37,19 +39,16 @@ const HomePage = () => {
                     </h4>
                     <ul className='list-group list-group-flush'>
                         <li className='list-group-item'>
-                            Enriched Introduction to the Theory of Computation
-                        </li>
-                        <li className='list-group-item'>
-                            Foundations of computer science I
-                        </li>
-                        <li className='list-group-item'>
-                            Foundations of computer science II
+                            Introduction to Databases
                         </li>
                         <li className='list-group-item'>
                             Software Design Principles
                         </li>
                         <li className='list-group-item'>
-                            Calculus with Proofs
+                            Computer Organization
+                        </li>
+                        <li className='list-group-item'>
+                            Foundations of computer science I & II
                         </li>
                     </ul>
                 </div>

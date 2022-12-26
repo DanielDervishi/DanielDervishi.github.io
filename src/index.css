@@ -102,6 +102,7 @@ code {
   border-width: 1px !important;
   border-color: #66fcf2 !important;
   max-width: 340px;
+  min-width: 340px;
   margin: 40px;
 }
 
