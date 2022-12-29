@@ -6,6 +6,7 @@ import PersonalWebsitePopout from './PersonalWebsitePopout'
 import ClinicManagerPopout from './ClinicManagerPopout'
 import HangmanPopout from './HangmanPopout'
 import MatchingPopout from './MatchingPopout'
+import BreakoutPopout from './BreakoutPopout'
 import { popoutInfo } from './Data-Pre-Server'
 import { Modal, ModalHeader, ModalTitle, ModalBody, ModalFooter } from 'react-bootstrap'
 
@@ -24,6 +25,8 @@ const typeToComponent = {
     'hangman': () => { return (<HangmanPopout popoutData={popoutInfo['hangman']} />) }
     ,
     'matching': () => { return (<MatchingPopout popoutData={popoutInfo['matching']} />) }
+    ,
+    'breakout': () => { return (<BreakoutPopout popoutData={popoutInfo['breakout']} />) }
 }
 const Popout = ({ type, setActivePopup }) => {
     console.log('Made it to popout with type: ', type)

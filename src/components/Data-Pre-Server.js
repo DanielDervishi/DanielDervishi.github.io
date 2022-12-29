@@ -94,6 +94,13 @@ const projectData = [
         "technologies": "Swift",
         "img": "Matching.png"
     },
+    {
+        "title": "Breakout",
+        "identifier": "breakout",
+        "content": [],
+        "technologies": "Mips Assembley",
+        "img": "breakout.png"
+    }
 
 ]
 const popoutInfo = {
@@ -123,6 +130,10 @@ const popoutInfo = {
     },
     'matching': {
         'Title': 'Matching Card Game',
+        'Points': []
+    },
+    'breakout': {
+        'Title': 'Breakout Game',
         'Points': []
     }
 }
