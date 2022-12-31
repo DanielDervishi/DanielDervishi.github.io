@@ -43,12 +43,12 @@ const ClinicManagerPopout = () => {
     <h4 className='modalBodyTitle'>User Contact</h4>
     <div className='popoutVideo'>
         <video controls autoPlay>
-            <source src={process.env.PUBLIC_URL + 'Videos/User-Contact.MP4'} type="video/mp4" />
+            <source src={process.env.PUBLIC_URL + 'Videos/User-Contact.mp4'} type="video/mp4" />
         </video> 
     </div>
     <h4 className='modalBodyTitle'>Prescription Management</h4>
     <video controls autoPlay>
-            <source src={process.env.PUBLIC_URL + 'Videos/Prescription-Management.MP4'} type="video/mp4" />
+            <source src={process.env.PUBLIC_URL + 'Videos/Prescription-Management.mp4'} type="video/mp4" />
         </video> 
     <h2 className='modalBodyTitle'>Complete List of Commands:</h2>
     <a href='https://github.com/The-CSC207-Group/Project207#command-list' target = '_blank' className='ClinicManagerReadme'>https://github.com/The-CSC207-Group/Project207#command-list</a>
