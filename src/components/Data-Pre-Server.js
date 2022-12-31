@@ -37,22 +37,11 @@ const projectData = [
         }
     },
     {
-        "title": "Chrome Web Extension - Reminder Application",
-        "identifier": "Reminder",
-        "content": [],
-        "technologies": "HTML, CSS and JavaScript",
-        "img": "OnTime_Project_Img.png",
-        "external": {
-            "link": "https://chrome.google.com/webstore/detail/on-time-ba/ncbhngpkilpfenmofalllgccllibjpbp",
-            "name": "Chrome Web Store"
-        }
-    },
-    {
         "title": "Students Developing Software",
         "identifier": "SDS",
         "content": [],
         "technologies": "Ruby, Ruby on Rails, Action Policy, Rspec",
-        "img": "SDS.png",
+        "img": "SDS.png", 
         "external": {
             "link": "https://github.com/MarkUsProject/Markus",
             "name": "Main Github Page"
@@ -60,7 +49,6 @@ const projectData = [
     },
     {
         "title": "Personal Website",
-        "identifier": "personalWebsite",
         "content": [],
         "technologies": "React, JavaScript, HTML, CSS, Bootstrap",
         "img": "personalWebsite.png",
@@ -100,6 +88,17 @@ const projectData = [
         "content": [],
         "technologies": "Mips Assembley",
         "img": "breakout.png"
+    },
+    {
+        "title": "Chrome Web Extension - Reminder Application",
+        "identifier": "Reminder",
+        "content": [],
+        "technologies": "HTML, CSS and JavaScript",
+        "img": "OnTime_Project_Img.png",
+        "external": {
+            "link": "https://chrome.google.com/webstore/detail/on-time-ba/ncbhngpkilpfenmofalllgccllibjpbp",
+            "name": "Chrome Web Store"
+        }
     }
 
 ]

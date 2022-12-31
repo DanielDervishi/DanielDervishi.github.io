@@ -18,10 +18,12 @@ const InfoBox = ({ title, content, technologies, img, external, setActivePopup, 
             </div>
         </div>
         <div className="InfoBoxButtons card-footer">
-            <button className='projectButton btn btn-outline-primary' onClick={() => {
+            {identifier != undefined ?
+                <button className='projectButton btn btn-outline-primary' onClick={() => {
                 setActivePopup(identifier)
                 console.log(identifier)
             }}>More Info</button>
+                 : <></>}
             {external != undefined ?
                 <a href={external.link}>
                     <button className='projectButton btn btn-outline-primary' >{external.name}</button>

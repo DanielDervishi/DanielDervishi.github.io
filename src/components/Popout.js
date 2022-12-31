@@ -18,8 +18,6 @@ const typeToComponent = {
 
     'SDS': () => { return (<SDSPopout popoutData={popoutInfo['SDS']} />) }
     ,
-    'personalWebsite': () => { return (<PersonalWebsitePopout popoutData={popoutInfo['personalWebsite']} />) }
-    ,
     'clinicManager': () => { return (<ClinicManagerPopout popoutData={popoutInfo['clinicManager']} />) }
     ,
     'hangman': () => { return (<HangmanPopout popoutData={popoutInfo['hangman']} />) }
@@ -50,7 +48,6 @@ const Popout = ({ type, setActivePopup }) => {
             <ModalFooter>
                 <button type="button" className="btn btn-outline-primary" onClick={() => { setActivePopup('') }}>Close</button>
             </ModalFooter >
-
         </Modal>
     )
 
