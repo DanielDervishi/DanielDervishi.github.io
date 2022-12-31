@@ -25,7 +25,7 @@ const InfoBox = ({ title, content, technologies, img, external, setActivePopup, 
             }}>More Info</button>
                  : <></>}
             {external != undefined ?
-                <a href={external.link}>
+                <a href={external.link} target = '_blank'>
                     <button className='projectButton btn btn-outline-primary' >{external.name}</button>
                 </a> : <></>}
 

@@ -10,7 +10,7 @@ const navIcons = [{
 },
 {
     "URL": "/projects",
-    "text": "Projects",
+    "text": "Projects and Experiences",
     "image": "Some Image"
 },
 {
@@ -86,12 +86,11 @@ const projectData = [
         "title": "Breakout",
         "identifier": "breakout",
         "content": [],
-        "technologies": "Mips Assembley",
+        "technologies": "Mips Assembly",
         "img": "breakout.png"
     },
     {
         "title": "Chrome Web Extension - Reminder Application",
-        "identifier": "Reminder",
         "content": [],
         "technologies": "HTML, CSS and JavaScript",
         "img": "OnTime_Project_Img.png",

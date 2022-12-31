@@ -14,8 +14,8 @@ const NavBar = ({ navIcons, setURL, navigate }) => {
                         text={navIcon.text} image={navIcon.image} setURL={setURL} navigate={navigate} />)}
             </nav>
             <span className='NavBarExternalLinks navbar-text'>
-                <a href='https://github.com/DanielDervishi'><img src={process.env.PUBLIC_URL + "Images/" + 'Github-Logo.png'} className='NavBarExternalLink' /></a>
-                <a href='https://www.linkedin.com/in/daniel-dervishi-972004197/'><img src={process.env.PUBLIC_URL + "Images/" + 'Linkedin-Logo.png'} className='NavBarExternalLink' /></a>
+                <a href='https://github.com/DanielDervishi' target='_blank'><img src={process.env.PUBLIC_URL + "Images/" + 'Github-Logo.png'} className='NavBarExternalLink' /></a>
+                <a href='https://www.linkedin.com/in/danieldervishi' target='_blank'><img src={process.env.PUBLIC_URL + "Images/" + 'Linkedin-Logo.png'} className='NavBarExternalLink' /></a>
             </span>
         </div>
     )

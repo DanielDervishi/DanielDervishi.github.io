@@ -292,15 +292,23 @@ h1 {
 .modalBodyTitle{
   display: flex;
   justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .crimeRateLink{
   display: flex;
   justify-content: center;
-  padding-bottom: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   font-size: 1.5rem;
 }
 
 video {
   width: 100%;
   height: auto;
+}
+
+.ClinicManagerReadme{
+  display: flex;
+  justify-content: center;
 }

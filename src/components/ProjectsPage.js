@@ -6,7 +6,7 @@ const ProjectsPage = ({ projectData, setActivePopup }) => {
     return (
         <>
             <h1>
-                Projects
+                Projects and Experiences
             </h1>
             <div className="row">
                 <InfoCollection data={projectData} setActivePopup={setActivePopup} />
