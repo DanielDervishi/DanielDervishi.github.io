@@ -87,7 +87,7 @@ const projectData = [
         "identifier": "breakout",
         "content": [],
         "technologies": "Mips Assembly",
-        "img": "breakout.png"
+        "img": "Breakout.png"
     },
     {
         "title": "Chrome Web Extension - Reminder Application",
