@@ -3,6 +3,8 @@ import React from 'react'
 const ClinicManagerPopout = () => {
     return (<div className='popoutBody'>
 
+    <a href='https://replit.com/@ExoticLobster/Project207?v=1' target="_blank" className='crimeRateLink'>Try it out yourself! (Link To Repl)</a>
+
     <h2 className='modalBodyTitle'>Motivation</h2>
 
     <ul>
