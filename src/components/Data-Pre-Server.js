@@ -41,7 +41,7 @@ const projectData = [
         "identifier": "SDS",
         "content": [],
         "technologies": "Ruby, Ruby on Rails, Action Policy, Rspec",
-        "img": "SDS.png", 
+        "img": "SDS.png",
         "external": {
             "link": "https://github.com/MarkUsProject/Markus",
             "name": "Main Github Page"
@@ -86,7 +86,7 @@ const projectData = [
         "title": "Breakout",
         "identifier": "breakout",
         "content": [],
-        "technologies": "Mips Assembly",
+        "technologies": "MIPS Assembly",
         "img": "Breakout.png"
     },
     {
