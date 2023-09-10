@@ -289,13 +289,14 @@ h1 {
   width: 100%;
 }
 
-.modalBodyTitle{
+.modalBodyTitle {
   display: flex;
   justify-content: center;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.crimeRateLink{
+
+.crimeRateLink {
   display: flex;
   justify-content: center;
   padding-top: 30px;
@@ -308,7 +309,11 @@ video {
   height: auto;
 }
 
-.ClinicManagerReadme{
+.ClinicManagerReadme {
   display: flex;
   justify-content: center;
+}
+
+.SDS-Team-Photo {
+  max-width: 100%;
 }

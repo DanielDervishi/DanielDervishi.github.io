@@ -26,15 +26,26 @@ const navIcons = [{
 ]
 const projectData = [
     {
-        "title": "Covid-19 Crime Rate Relation Visualization",
-        "identifier": "CrimeRate",
+        "title": "UofT Blueprint - Project Lead",
+        "identifier": "blueprint",
         "content": [],
-        "technologies": "Python",
-        "img": "Covid_Project_Img.png",
+        "technologies": "Technologies TBD",
+        "img": "Blueprint-Logo.png",
         "external": {
-            "link": "https://github.com/DanielDervishi/CSC110-Final-Project",
-            "name": "Github"
+            "link": "https://uoftblueprint.org/#/",
+            "name": "Club Website"
         }
+    },
+    {
+        "title": "UofT (MarkUs) SDE Internship - Summer 2023",
+        "identifier": "markusInternship",
+        "content": [],
+        "technologies": "Ruby on Rails, React",
+        "img": "MarkUs-Logo.png",
+        // "external": {
+        //     "link": "https://uoftblueprint.org/#/",
+        //     "name": "Club Website"
+        // }
     },
     {
         "title": "Students Developing Software",
@@ -45,6 +56,17 @@ const projectData = [
         "external": {
             "link": "https://github.com/MarkUsProject/Markus",
             "name": "Main Github Page"
+        }
+    },
+    {
+        "title": "Covid-19 Crime Rate Relation Visualization",
+        "identifier": "CrimeRate",
+        "content": [],
+        "technologies": "Python",
+        "img": "Covid_Project_Img.png",
+        "external": {
+            "link": "https://github.com/DanielDervishi/CSC110-Final-Project",
+            "name": "Github"
         }
     },
     {
@@ -132,6 +154,14 @@ const popoutInfo = {
     },
     'breakout': {
         'Title': 'Breakout Game',
+        'Points': []
+    },
+    'blueprint': {
+        'Title': 'UofT Blueprint',
+        'Points': []
+    },
+    'markusInternship': {
+        'Title': 'UofT (MarkUs) SDE Internship - Summer 2023',
         'Points': []
     }
 }

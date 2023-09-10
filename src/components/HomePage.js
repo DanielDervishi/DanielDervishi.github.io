@@ -12,7 +12,7 @@ const HomePage = () => {
                 <img className="MyImage img-fluid" src={process.env.PUBLIC_URL + "Images/MyImage.gif"} />
             </div>
             <div className='IntroText CenterItems font-weight-bold'>
-                My name is Daniel Dervishi and I'm a second year computer science major at the University of Toronto.
+                My name is Daniel Dervishi and I'm a third year computer science major at the University of Toronto.
             </div>
             <div className="row">
                 <div className="card-deck">
@@ -22,13 +22,16 @@ const HomePage = () => {
                         </h4>
                         <ul className='list-group list-group-flush'>
                             <li className='list-group-item'>
-                                Software Engineering (backend mainly)
+                                Software Engineering
                             </li>
                             <li className='list-group-item'>
-                                Computer Systems
+                                Software Engineering!
                             </li>
                             <li className='list-group-item'>
-                                Theoretical Computer Science
+                                and...
+                            </li>
+                            <li className='list-group-item'>
+                                Software Engineering!!
                             </li>
                         </ul>
                     </div>
