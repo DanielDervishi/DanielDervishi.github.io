@@ -2,13 +2,14 @@ import React from 'react'
 import CrimeRatePopout from './CrimeRatePopout'
 import ReminderPopout from './ReminderPopout'
 import SDSPopout from './SDSPopout'
-import PersonalWebsitePopout from './PersonalWebsitePopout'
 import ClinicManagerPopout from './ClinicManagerPopout'
 import HangmanPopout from './HangmanPopout'
 import MatchingPopout from './MatchingPopout'
 import BreakoutPopout from './BreakoutPopout'
 import { popoutInfo } from './Data-Pre-Server'
 import { Modal, ModalHeader, ModalTitle, ModalBody, ModalFooter } from 'react-bootstrap'
+import InProgressPopout from './InProgressPopout'
+import BlueprintPopout from './BlueprintPopout'
 
 const typeToComponent = {
     'CrimeRate': () => {
@@ -25,11 +26,11 @@ const typeToComponent = {
     'matching': () => { return (<MatchingPopout popoutData={popoutInfo['matching']} />) }
     ,
     'breakout': () => { return (<BreakoutPopout popoutData={popoutInfo['breakout']} />) }
+    ,
+    'blueprint': () => { return (<BlueprintPopout popoutData={popoutInfo['blueprint']} />) }
 }
 const Popout = ({ type, setActivePopup }) => {
-    console.log('Made it to popout with type: ', type)
     return (
-
         <Modal
             size="lg"
             show={true}
@@ -43,17 +44,12 @@ const Popout = ({ type, setActivePopup }) => {
                 </ModalTitle>
             </ModalHeader>
             <ModalBody className='modalBody'>
-                {typeToComponent[type]()}
+                {typeToComponent[type] ? typeToComponent[type]() : <InProgressPopout />}
             </ModalBody>
             <ModalFooter>
                 <button type="button" className="btn btn-outline-primary" onClick={() => { setActivePopup('') }}>Close</button>
             </ModalFooter >
         </Modal>
     )
-
-
-
-
-
 }
 export default Popout

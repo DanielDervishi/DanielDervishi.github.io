@@ -2,6 +2,13 @@ import React from 'react'
 
 const SDSPopout = () => {
     return (<div className='popoutBody'>
+        <h2 className='modalBodyTitle'>The Team!</h2>
+        <img className={"SDS-Team-Photo"} src={process.env.PUBLIC_URL + "Images/SDS-Team-Photo.jpg"} />
+        <ul>
+            <li>
+                For anyone wondering, yes Maryam (our friend in front) is photoshopped in 😂
+            </li>
+        </ul>
         <h2 className='modalBodyTitle'>Motivation</h2>
 
         <ul>
